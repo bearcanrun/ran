@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index Snapshot should render correctly 1`] = `<withData />`;
+
+exports[`with Snapshot should render correctly 1`] = `<withData />`;
