@@ -1,7 +1,7 @@
 /* eslint-env jest */
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Index from '../pages/index';
+import SignUp from '../pages/signup';
 
 const props = {
   url: {
@@ -18,12 +18,12 @@ const props = {
 };
 
 jest.mock('../components/LinkList', () => 'LinkList');
-jest.mock('../components/PostList', () => 'PostList');
+jest.mock('../components/SignUpForm', () => 'SignUpForm');
 
-describe('Index page snapshot', () => {
+describe('SignUp page snapshot', () => {
   it('should render correctly', done => {
     const component = renderer.create(
-      <Index url={props.url} actions={props.actions} {...props} />
+      <SignUp url={props.url} actions={props.actions} {...props} />
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

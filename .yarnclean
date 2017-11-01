@@ -10,7 +10,7 @@ doc
 website
 images
 assets
-!istanbul/lib/assets
+!istanbul-reports/lib/html/assets
 
 # examples
 example

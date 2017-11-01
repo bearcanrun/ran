@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Index page snapshot should render correctly 1`] = `
+exports[`SignUp page snapshot should render correctly 1`] = `
 <div
   className="sc-bdVaJa iNGvMq"
 >
@@ -33,6 +33,6 @@ exports[`Index page snapshot should render correctly 1`] = `
       </a>
     </p>
   </div>
-  <PostList />
+  <SignUpForm />
 </div>
 `;

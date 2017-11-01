@@ -2,7 +2,7 @@
 
 ## Testing
 
-RAN uses [Jest](https://facebook.github.io/jest/) as its testing framework. [Snapshot testing](https://facebook.github.io/jest/docs/en/snapshot-testing.html) makes easy testing the UI for unexpected changes.
+RAN uses [Jest](https://facebook.github.io/jest/) as its testing framework. [Snapshot testing](https://facebook.github.io/jest/docs/en/snapshot-testing.html) makes for easy testing of unexpected changes in the UI.
 
 **Running tests**
 When you run `yarn run dev:test`, Jest will launch in the watch mode. Every time you save a file, it will re-run the tests, just like `yarn run dev` recompiles the code.
@@ -11,7 +11,7 @@ To update snapshots, run `yarn run test:u`.
 To collect coverage information, run `yarn run test:coverage`.
 
 **Note**
-- RAN currently uses the Jest 21.3 beta, as it includes a [`requestAnimationFrame` polyfill](https://github.com/facebook/jest/issues/4545) that removes a related error when testing with React 16. Generally using a beta release is not ideal, but this issue will be watched and otherwise has no major effects on writing tests with Jest.
+- RAN currently uses the Jest 21.3 beta, as it includes a [`requestAnimationFrame` polyfill](https://github.com/facebook/jest/issues/4545) that removes a related error when testing with React 16. Generally using a beta release is not ideal, but this issue will be watched and otherwise has no major effects on testing with Jest.
 
 ###Adding Enzyme###
 Install from npm

@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Index page snapshot should render correctly 1`] = `
+exports[`SignIn page snapshot should render correctly 1`] = `
 <div
   className="sc-bdVaJa iNGvMq"
 >
   <header
-    className="sc-EHOje hLoaLq"
+    className="sc-gzVnrw gqinNP"
   >
     <img
       alt="RAN!"
-      className="sc-bZQynM igFTTR"
+      className="sc-htoDjs eALRuc"
       src="https://user-images.githubusercontent.com/694940/29736531-6ab509e8-8a02-11e7-8e61-66e5ea4e29b8.png"
     />
     <LinkList
@@ -19,7 +19,7 @@ exports[`Index page snapshot should render correctly 1`] = `
     />
   </header>
   <div
-    className="sc-gzVnrw bqZRvy"
+    className="sc-dnqmqq cxGlgF"
   >
     <p>
       Example app of RAN! In the interest of fostering an open and welcoming environment, we as contributors, maintainers and writers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation. Please be kind and careful when you write something here. It is just showing how RAN! works on production. These posts are not related to RAN, Author of RAN, Contributors and Maintainers. Thank you for being kind, funny and awesome. For details, Please
@@ -33,6 +33,46 @@ exports[`Index page snapshot should render correctly 1`] = `
       </a>
     </p>
   </div>
-  <PostList />
+  <div>
+    <div
+      className="sc-EHOje hnaVRQ"
+    >
+      <h1>
+        Sign In
+      </h1>
+      <form>
+        <div>
+          <input
+            name="email"
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Email"
+            type="email"
+          />
+          <div />
+        </div>
+        <div>
+          <input
+            name="password"
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Password"
+            type="password"
+          />
+          <div />
+        </div>
+        <br />
+        <button
+          className="sc-bZQynM cuvfAq"
+          disabled={true}
+          onClick={[Function]}
+        >
+          Sign In
+        </button>
+      </form>
+    </div>
+    <br />
+    <div />
+  </div>
 </div>
 `;
