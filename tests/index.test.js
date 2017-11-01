@@ -1,3 +1,6 @@
+/**
+ * @jest-environment node
+ */
 /* eslint-env jest */
 import React from 'react';
 import renderer from 'react-test-renderer';

@@ -36,19 +36,20 @@
   },
   "jest": {
     "coverageDirectory": "./coverage/",
-    "collectCoverage": true,
+    "collectCoverage": false,
     "testRegex": "\\.test\\.js$",
     "testPathIgnorePatterns": [
       "<rootDir>/(build|docs|node_modules)/",
       "/__mocks__/"
-    ]
+    ],
+    "testEnvironment": "jsdom"
   },
   "scripts": {
     "start": "cross-env NODE_ENV=production node ./node_modules/.bin/pm2 start server.js -i max --attach",
     "build": "npm run clean-cache && next build",
     "clean-cache": "rimraf -rf ./node_modules/.cache",
     "dev": "npm run lint && npm run clean-cache && node server.js",
-    "dev:test": "npm run lint && npm run clean-cache; [ -d ./tests ] && jest --watch; node server.js",
+    "dev:test": "npm run lint && npm run clean-cache && [ -d ./tests ] && jest --watch",
     "dev:next": "npm run lint && npm run clean-cache && next",
     "start:next": "node ./node_modules/.bin/pm2 start npm --name \"next\" -- start",
     "lint": "eslint --fix --ext .js pages components containers libraries server helper_scripts",
@@ -69,7 +70,6 @@
     "graphql:update_schema": "graphql get-schema",
     "graphql:see_graph": "graphql voyager",
     "build:static_export": "cross-env STATIC_EXPORT=true npm run build && cross-env STATIC_EXPORT=true next export",
-    "test": "[ -d ./tests ] && jest --watch",
     "test:u": "[ -d ./tests ] && jest -u",
     "test:coverage": "jest --coverage"
   },
@@ -125,7 +125,7 @@
     "handlebars": "4.0.11",
     "husky": "0.14.3",
     "inquirer": "3.3.0",
-    "jest": "^21.3.0-beta.4",
+    "jest": "^21.2.0",
     "lint-staged": "4.3.0",
     "ngrok": "2.2.23",
     "pre-commit": "1.2.2",
